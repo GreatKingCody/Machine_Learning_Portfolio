@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from sklearn.model_selection import train_test_split 
+from sklearn.model_selection import train_test_split
 
 from sklearn.cluster import KMeans
 
@@ -13,8 +13,10 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix 
+from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 
 
+df = pd.read_csv('profiles.csv')
+print(df.head())
