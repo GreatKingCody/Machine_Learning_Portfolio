@@ -18,5 +18,32 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 
 
+
+
+
+# Write in the csv
 df = pd.read_csv('profiles.csv')
-print(df.head())
+# print(df.head())
+
+
+#Explore the columns
+# print(df.columns)
+# print(df.head(1))
+
+
+# print(df.sign.value_counts())
+sign = df.sign
+
+split1 = sign.str.split(' ', 1)
+
+signs = []
+matter = []
+
+
+for i in split1:
+    if type(i) == list and len(i) == 1:
+        signs.append(i)
+    elif type(i) == list and len(i) == 2:
+        matter.append(i)
+# print(signs)
+print(matter)
