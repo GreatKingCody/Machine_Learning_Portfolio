@@ -1,0 +1,14 @@
+{
+    "python.testing.pytestArgs": [
+        "OKCupid-Date-A-Scientist-Starter"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./OKCupid-Date-A-Scientist-Starter",
+        "-p",
+        "*test*.py"
+    ]
+}
